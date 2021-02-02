@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background-color: rgb(17, 16, 16);
+}
+
+
+.text-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 60px;
+    opacity: 100%;
+}
+
+.coming{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/flinders-station-copyright-zapstack.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 16%;
+}
+
+h3{
+    position: absolute;
+    z-index: 2;
+    font-size: 1.6rem;
+    font-family:monospace;
+    font-weight: 100;
+    margin-top: 80px;
+    color: rgb(194, 194, 194);
+    opacity: 100%;
+}
+
