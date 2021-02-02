@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(26, 24, 24);
 }
 
 
@@ -27,6 +27,7 @@ body{
     justify-content: center;
     position: absolute;
     height: 60px;
+    width: 84%;
     opacity: 100%;
 }
 
@@ -46,11 +47,11 @@ body{
 h3{
     position: absolute;
     z-index: 2;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family:monospace;
     font-weight: 100;
     margin-top: 80px;
-    color: rgb(245, 245, 245);
-    opacity: 100%;
+    color: rgb(212, 212, 212);
+    opacity: 90%;
 }
 
