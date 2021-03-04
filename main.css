@@ -1085,7 +1085,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:40px;
     white-space: nowrap;
     width: 190px;
     background-color: black;
