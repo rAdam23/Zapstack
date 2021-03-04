@@ -503,38 +503,38 @@ footer{
         "footer";
     }
 
-   
-footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 90px 40px 40px 40px;
-}
+    
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 40px 40px 40px;
+    }
 
-.contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 100%;
-    height: 75%;
-}
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+        height: 75%;
+    }
 
-.contents li{
-    padding: 0px;
-}
+    .contents li{
+        padding: 0px;
+    }
 
-.copyright {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 25%;
-    padding: 0px 0px 0px 0px;
-}
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 25%;
+        padding: 0px 0px 0px 0px;
+    }
 
 }
 
@@ -574,7 +574,61 @@ footer{
     filter: grayscale(100%) contrast(100%) brightness(95%);
 }
 
+@media only screen and (max-width: 866px) {
 
+    .page-grid-about-us{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "img-landing-about-us"
+        "content-landing-about-us"
+        "footer";
+    }
+
+    .content-landing-about-us{
+        grid-area: content-landing-about-us;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        background-color:rgb(204, 197, 175);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .img-landing-about-us{
+        height: 70vh;
+        grid-area: img-landing-about-us;
+        background-image: url(images/melbourne-alley-copyright-zapstack.jpg);
+        background-size: cover;
+        background-position: 40% 10%;
+        filter: grayscale(100%) contrast(100%) brightness(95%);
+    }
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 480px;
+    padding: 50px 10px 20px 10px;
+}
+
+.contents a{
+    text-decoration: none;
+    color: rgb(92, 89, 84);
+}
+
+.contents ul{
+    height: auto;
+}
+
+
+}
 
 /*--------- WHAT-WE-DO PAGE ------------------------------------------------------*/
 /*--------- WHAT-WE-DO PAGE ------------------------------------------------------*/
@@ -599,7 +653,42 @@ footer{
     filter: grayscale(100%) contrast(95%) brightness(100%);
 }
 
+@media only screen and (max-width: 866px) {
 
+    .page-grid-what-we-do{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "img-landing-what-we-do"
+        "content-landing-about-us"
+        "footer";
+    }
+
+    .content-landing-about-us{
+        grid-area: content-landing-about-us;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        background-color:rgb(204, 197, 175);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .img-landing-what-we-do{
+        height: 70vh;
+        grid-area: img-landing-what-we-do;
+        background-image: url(images/state-libaray-copyright-zapstack.jpg);
+        background-size: cover;
+        background-position: 40% 10%;
+        filter: grayscale(100%) contrast(100%) brightness(95%);
+    }
+
+
+}
 
 /*--------- CONTACT-US PAGE ------------------------------------------------------*/
 /*--------- CONTACT-US PAGE ------------------------------------------------------*/
@@ -612,12 +701,23 @@ footer{
     grid-template-rows: .1fr 1.2fr auto;
     grid-template-areas: 
     "nav nav nav"
-    "content-landing-about-us img-landing-what-we-do img-landing-what-we-do"
+    "content-landing-contact-us img-landing-contact-us img-landing-contact-us"
     "footer footer footer";
 }
 
+.content-landing-contact-us{
+    grid-area: content-landing-contact-us;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 30px 30px;
+    background-color:rgb(204, 197, 175);
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+}
+
 .img-landing-contact-us{
-    grid-area: img-landing-what-we-do;
+    grid-area: img-landing-contact-us;
     background-image: url(images/acdc-wall-copyright-zapstack.jpg);
     background-size: cover;
     background-position: 50% 50%;
@@ -656,6 +756,44 @@ footer{
     padding-right: 12px;
 }
 
+@media only screen and (max-width: 866px) {
+
+    .page-grid-contact-us{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "img-landing-contact-us"
+        "content-landing-contact-us"
+        "footer";
+    }
+
+    .content-landing-contact-us{
+        grid-area: content-landing-contact-us;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        background-color:rgb(204, 197, 175);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .img-landing-contact-us{
+        height: 70vh;
+        grid-area: img-landing-contact-us;
+        background-image: url(images/state-libaray-copyright-zapstack.jpg);
+        background-size: cover;
+        background-position: 40% 10%;
+        filter: grayscale(100%) contrast(100%) brightness(95%);
+    }
+
+
+}
+
+
 @media only screen and (max-width: 424px) {
 
     .logo {
@@ -669,7 +807,7 @@ footer{
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 75vh auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-areas: 
         "nav"
         "img-landing-welcome"
@@ -695,8 +833,8 @@ footer{
     }
     
     .mobile-nav{
-        display: flex;
         grid-area: nav;
+        display: flex;
         background-color: rgb(36, 36, 36);
         flex-direction: column;
         justify-content: center;
@@ -704,6 +842,16 @@ footer{
         align-items: center;
         position: relative;
         z-index: 10;
+    }
+    
+    .mobile-nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: auto;
+        min-width: fit-content;
+        justify-content: center;
+        align-items: center;
     }
     
     .contact-us-btn{
@@ -722,6 +870,7 @@ footer{
     }
     
     .img-landing-welcome{
+        height: 70vh;
         grid-area: img-landing-welcome;
         background-image: url(images/shot-tower-copyright-zapstack.jpg);
         background-size: cover;
@@ -768,7 +917,6 @@ footer{
         height: 100%;
     }
     
-       
     .img-landing-about{
         grid-area: img-landing-about;
         background-image: url(images/flinders-station-copyright-zapstack.jpg);
@@ -786,7 +934,7 @@ footer{
         background-color:rgb(204, 197, 175);
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: auto;
     }
     
     .lrg-title-text-landing{
@@ -796,16 +944,8 @@ footer{
         width: 90%;
     }
     
-    .mobile-nav ul{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        width: auto;
-        min-width: fit-content;
-        justify-content: center;
-        align-items: center;
-    }
-    
+/*--------- FOOTER MOBILE ------------------------------------------------------*/
+
     footer{
         grid-area: footer;
         display: flex;
@@ -816,15 +956,133 @@ footer{
         padding: 50px 10px 20px 10px;
     }
 
+    .contents a{
+        text-decoration: none;
+        color: rgb(92, 89, 84);
+    }
+
     .contents ul{
         height: auto;
     }
 
  
-    
+/*--------- ABOUT-US MOBILE ------------------------------------------------------*/
 
 
-
-    
+    .page-grid-about-us{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "img-landing-about-us"
+        "content-landing-about-us"
+        "footer";
     }
+
+    .content-landing-about-us{
+        grid-area: content-landing-about-us;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        background-color:rgb(204, 197, 175);
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    
+    .img-landing-about-us{
+        height: 70vh;
+        grid-area: img-landing-about-us;
+        background-image: url(images/melbourne-alley-copyright-zapstack.jpg);
+        background-size: cover;
+        background-position: 40% 10%;
+        filter: grayscale(100%) contrast(100%) brightness(95%);
+    }
+
+    
+    
+    
+
+    /*--------- WHAT-WE-DO MOBILE ------------------------------------------------------*/
+
+    .page-grid-what-we-do{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "img-landing-what-we-do"
+        "content-landing-about-us"
+        "footer";
+    }
+
+
+    .img-landing-what-we-do{
+        height: 70vh;
+        grid-area: img-landing-what-we-do;
+        background-image: url(images/state-libaray-copyright-zapstack.jpg);
+        background-size: cover;
+        background-position: 50% 90%;
+        filter: grayscale(100%) contrast(95%) brightness(100%);
+    }
+
+
+/*--------- CONTACT US MOBILE ------------------------------------------------------*/
+
+.page-grid-contact-us{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "nav"
+    "img-landing-contact-us"
+    "content-landing-contact-us"
+    "footer";
+}
+
+.content-landing-contact-us{
+    grid-area: content-landing-contact-us;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color:rgb(204, 197, 175);
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+.img-landing-contact-us{
+    height: 70vh;
+    grid-area: img-landing-contact-us;
+    background-image: url(images/acdc-wall-copyright-zapstack.jpg);
+    background-size: cover;
+    background-position: 50% 90%;
+    filter: grayscale(100%) contrast(95%) brightness(100%);
+}
+
+
+.more-button-box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: 50px 0;
+}
+
+.more-button-box a{
+    color: rgb(238, 234, 220);
+    margin: 12px 0;
+}
+
+
+    
+    
+}
     
