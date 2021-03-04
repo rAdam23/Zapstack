@@ -1086,6 +1086,7 @@ footer{
     justify-content: center;
     align-items: center;
     height:40px;
+    white-space: nowrap;
     width: fit-content;
     background-color: black;
     color: rgb(238, 234, 220);
