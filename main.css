@@ -1081,7 +1081,20 @@ footer{
     margin: 12px 0;
 }
 
-
+.more-button-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    width: fit-content;
+    background-color: black;
+    color: rgb(238, 234, 220);
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin-top: 40px;
+    padding: 15px;
+    text-decoration: none;
+}
     
     
 }
