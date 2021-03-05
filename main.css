@@ -434,10 +434,10 @@ footer{
 
 
 .page-grid{
-    height: 630vh;
+    height: 530vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .7fr .5fr .8fr .8fr .8fr .8fr .5fr auto;
+    grid-template-rows: auto .7fr .7fr .6fr .6fr .6fr .8fr .7fr auto;
     grid-template-areas: 
     "nav"
     "img-landing-welcome"
@@ -783,10 +783,10 @@ footer{
 }
 
 .page-grid{
-    height: 500vh;
+    height: 440vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .7fr .5fr .5fr .5fr .5fr .7fr .5fr auto;
+    grid-template-rows: .1fr .7fr .4fr .4fr .4fr .5fr .7fr .5fr auto;
     grid-template-areas: 
     "nav"
     "img-landing-welcome"
@@ -805,12 +805,26 @@ footer{
     display: none;
 }
 
-nav ul{
+nav{
+    grid-area: nav;
+    background-color: rgb(36, 36, 36);
     display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    position: fixed;
+    z-index: 10;
 }
 
-nav{
+nav ul{
     display: none;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-nav{
@@ -853,7 +867,6 @@ nav{
 /*--------- WELCOME 424px -----------------------------*/
 
 .img-landing-welcome{
-    height: 100%;
     grid-area: img-landing-welcome;
     background-image: url(images/shot-tower-copyright-zapstack.jpg);
     background-size: cover;
