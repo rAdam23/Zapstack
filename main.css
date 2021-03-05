@@ -845,14 +845,14 @@ footer{
     display: flex;
     align-items: center;
     margin: 8px 0px 0px 0px;
-    height: 32px;
+    height: 29px;
 }
 
 .page-grid{
-    height: 570vh;
+    height: 590vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .9fr .5fr .9fr .9fr .9fr .9fr .5fr auto;
+    grid-template-rows: .1fr 1.5fr .5fr .9fr .9fr .9fr .9fr .5fr auto;
     grid-template-areas: 
     "nav"
     "img-landing-welcome"
@@ -922,12 +922,12 @@ nav ul{
     height: fit-content;
     width:fit-content;
     margin: -2px 0px 0px 0px;
-    padding: 8px 9px 8px 9px;
+    padding: 8px 8px 8px 8px;
     border-radius: 5px;
     font-family: monospace;
     background-color: rgb(221, 92, 0);
     color: black;
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 /*--------- WELCOME 424px -----------------------------*/
