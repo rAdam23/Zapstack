@@ -680,9 +680,40 @@ footer{
 /*--------- MAX-WIDTH 756px -----------------------------*/
 /*--------- MAX-WIDTH 756px -----------------------------*/    
 @media only screen and (max-width: 776px) {
+
+    nav{
+        grid-area: nav;
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 20px 30px 20px 30px;
+        position: fixed;
+        z-index: 10;
+    }
     
-    nav {
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .mobile-nav{
+        grid-area: nav;
         display: none;
+        background-color: rgb(36, 36, 36);
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        padding: 20px 18px 20px 18px;
+        z-index: 10;
     }
 
     .mobile-nav{
@@ -706,6 +737,41 @@ footer{
 /*--------- MAX-WIDTH 652px -----------------------------*/
 /*--------- MAX-WIDTH 652px -----------------------------*/
 @media only screen and (max-width: 652px) {
+
+    nav{
+        grid-area: nav;
+        background-color: rgb(36, 36, 36);
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 20px 30px 20px 30px;
+        position: fixed;
+        z-index: 10;
+    }
+    
+    nav ul{
+        display: none;
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .mobile-nav{
+        grid-area: nav;
+        display: flex;
+        background-color: rgb(36, 36, 36);
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        padding: 20px 18px 20px 18px;
+        z-index: 10;
+    }
 
     .content-landing-welcome{
         grid-area: content-landing-welcome;
@@ -783,10 +849,10 @@ footer{
 }
 
 .page-grid{
-    height: 440vh;
+    height: 570vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .7fr .4fr .4fr .4fr .5fr .7fr .5fr auto;
+    grid-template-rows: .1fr .9fr .5fr .9fr .9fr .9fr .9fr .5fr auto;
     grid-template-areas: 
     "nav"
     "img-landing-welcome"
