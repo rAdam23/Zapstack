@@ -725,7 +725,7 @@ footer{
         flex-direction: row;
         list-style: none;
         width: 100%;
-        min-width: 330px;
+        min-width: auto;
         justify-content: space-between;
         align-items: center;
     }
